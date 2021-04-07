@@ -31,15 +31,15 @@ http://localhost:8080/planosaudepampulhaint
 
 ### Usuario
 http://localhost:8080/usuario
-{
-    "id": 3, 
-     "nome": "maria silva", 
-     "cpf": 1974567845, 
-     "endereco": "rua de maria 20", 
-     "email": "mariasilva@gmail.com", 
-     "odonto": null, 
-     "mental": null, 
-     "norteEuropa": null, 
-     "pampulha": null 
-}
+>     {
+>         "id": 3, 
+>          "nome": "maria silva", 
+>          "cpf": 1974567845, 
+>          "endereco": "rua de maria 20", 
+>          "email": "mariasilva@gmail.com", 
+>          "odonto": null, 
+>          "mental": null, 
+>          "norteEuropa": null, 
+>          "pampulha": null 
+>     }
 
