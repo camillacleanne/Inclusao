@@ -7,7 +7,7 @@
 Após clonar o repositório localmente você pode:
 
 ## Executar o projeto que esta na pasta local através da IDE Spring Tool Suite
-![alt text] https://i.imgur.com/2VjsvQy.png
+![alt text] (https://i.imgur.com/2VjsvQy.png)
 
 
 ## Com o botão direito no caminho src/main/java executar a aplicação no seguinte caminho:
