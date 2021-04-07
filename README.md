@@ -1,4 +1,4 @@
-# testeBackend
+# INCLUSÃO
 
 ##DOCUMENTAÇÃO AUTOMATICA PARA API REST EM SPRING VIA SWAGGER 
 ### http://localhost:8080/swagger-ui.html
@@ -29,7 +29,18 @@ http://localhost:8080/planosaudeeuropacontroller
 ### Plano Saude Pampulha
 http://localhost:8080/planosaudepampulhaint
 
-
-
+### Usuario
+http://localhost:8080/usuario
+{
+    "id": 3,
+    "nome": "maria silva",
+    "cpf": 1974567845,
+    "endereco": "rua de maria 20",
+    "email": "mariasilva@gmail.com",
+    "odonto": null,
+    "mental": null,
+    "norteEuropa": null,
+    "pampulha": null
+}
 
 
