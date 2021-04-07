@@ -17,9 +17,16 @@ Após clonar o repositório localmente você pode:
 ![alt text](https://i.imgur.com/A8Um7ay.png)
 
 ## EndPoints
+### Plano Saúde Odontologico Dental
 http://localhost:8080/planoodontologicodental
+
+### Plano Saúde Mental
 http://localhost:8080/planosaudemental
+
+### Plano Saúde Europa
 http://localhost:8080/planosaudeeuropacontroller
+.
+### Plano Saude Pampulha
 http://localhost:8080/planosaudepampulhaint
 
 
