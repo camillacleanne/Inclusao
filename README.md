@@ -3,7 +3,7 @@
 ## DOCUMENTAÇÃO AUTOMATICA PARA API REST EM SPRING VIA SWAGGER 
 ### http://localhost:8080/swagger-ui.html
 
-### PASSOS PARA EXECUÇÃO DO PROJETO
+# PASSOS PARA EXECUÇÃO DO PROJETO
 Após clonar o repositório localmente você pode:
 
 # Executar o projeto que esta na pasta local através da IDE Spring Tool Suite
