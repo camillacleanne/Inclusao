@@ -16,7 +16,15 @@ Após clonar o repositório localmente você pode:
 # Após o start do projeto visualizado atraves do console: 
 ![alt text](https://i.imgur.com/A8Um7ay.png)
 
-## EndPoints
+# Lembrar de mudar para sua senha do banco no aplicattion.properties
+![alt text](https://imgur.com/8o3i2D5)
+
+# Abrir MySql para inspencionar e abrir o banco de dados e selecionar a pasta da aplicação
+![alt text](https://imgur.com/qhgf1jR)
+![alt text](https://imgur.com/lijQa7A)
+
+
+## EndPoints para teste
 ### Plano Saúde Odontologico Dental
 http://localhost:8080/planoodontologicodental
 
@@ -32,14 +40,10 @@ http://localhost:8080/planosaudepampulhaint
 ### Usuario
 http://localhost:8080/usuario
 >     {
->         "id": 3, 
->          "nome": "maria silva", 
->          "cpf": 1974567845, 
->          "endereco": "rua de maria 20", 
->          "email": "mariasilva@gmail.com", 
->          "odonto": null, 
->          "mental": null, 
->          "norteEuropa": null, 
->          "pampulha": null 
+>           "cpf": 1974567845,
+>           "email": "maria.silva@email.com",
+>          "endereco": "rua das flores", 
+>          "nome": "maria silva" 
+>         
 >     }
 
