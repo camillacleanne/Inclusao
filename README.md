@@ -17,11 +17,11 @@ Após clonar o repositório localmente você pode:
 ![alt text](https://i.imgur.com/A8Um7ay.png)
 
 # Lembrar de mudar para sua senha do banco no aplicattion.properties
-![alt text](https://imgur.com/8o3i2D5)
+![alt text](https://i.imgur.com/8o3i2D5.png)
 
 # Abrir MySql para inspencionar e abrir o banco de dados e selecionar a pasta da aplicação
-![alt text](https://imgur.com/qhgf1jR)
-![alt text](https://imgur.com/lijQa7A)
+![alt text](https://i.imgur.com/qhgf1jR.png)
+![alt text](https://i.imgur.com/lijQa7A.png)
 
 
 ## EndPoints para teste
