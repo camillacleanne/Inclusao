@@ -6,29 +6,23 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
-
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "tb_plano_saude_norte_europa")
 public class PlanoSaudeNorteEuropa {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)	 
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	
-	@NotBlank (message = "O campo nao pode ser nulo")
-	@Size(min = 5, max = 100, message = "O campo deve ter no minimo 100 caracteres")
-	private String nome;
-	
-	@NotBlank (message = "O campo nao pode ser nulo")
-	@Size(min = 2, max = 12, message = "O campo deve ter no minimo 12 caracteres")
-	private String cpf;
-	
+
 	private LocalDate data;
-	
-	@NotBlank (message = "O campo nao pode ser nulo")
-	private String email;
+
+	@OneToOne
+	@JoinColumn(name="usuario_id", referencedColumnName = "id")
+	private Usuario usuario;
 
 	public long getId() {
 		return id;
@@ -36,22 +30,6 @@ public class PlanoSaudeNorteEuropa {
 
 	public void setId(long id) {
 		this.id = id;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public String getCpf() {
-		return cpf;
-	}
-
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
 	}
 
 	public LocalDate getData() {
@@ -62,11 +40,12 @@ public class PlanoSaudeNorteEuropa {
 		this.data = data;
 	}
 
-	public String getEmail() {
-		return email;
+	public Usuario getUsuario() {
+		return usuario;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
+
 }

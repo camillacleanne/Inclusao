@@ -4,23 +4,25 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 
 @Entity
+@Table(name = "tb_plano_saude_mental")
 public class PlanoSaudeMental {
-	
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)	 
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	
-	@NotBlank (message = "O campo nao pode ser nulo")
-	@Size(min = 5, max = 100, message = "O campo deve ter no minimo 100 caracteres")
-	private String nome;
-	
-	@Min(value = 0, message = "O campo deve ter no minimo valor maior do que zero" )
+
+	@Min(value = 0, message = "O campo deve ter no minimo valor maior do que zero")
 	private double horas;
+
+	@OneToOne
+	@JoinColumn(name="usuario_id", referencedColumnName = "id")
+	private Usuario usuario;
 
 	public long getId() {
 		return id;
@@ -30,19 +32,24 @@ public class PlanoSaudeMental {
 		this.id = id;
 	}
 
-	public String getNome() {
-		return nome;
-	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
 
 	public double getHoras() {
 		return horas;
 	}
 
-	public void setHoras(float horas) {
+	public void setHoras(double horas) {
 		this.horas = horas;
 	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
+	
+	
 }
